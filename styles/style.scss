@@ -1,0 +1,34 @@
+// This partial contains styling for global and non-repreat elements, such as body element
+@import './typoraphy';
+@import './variables';
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Kavoon&family=Secular+One&display=swap');
+
+body {
+  background-color: $color-body;
+  color: $color-text;
+}
+
+/* nav bar positioning */
+.header {
+  &__title {
+    font-family: 'Secular One', sans-serif;
+    font-size: 45px;
+    position: relative;
+    left: 5em;
+    padding-top: 0.3em;
+  }
+  &__nav {
+    font-family: 'Fredoka One', cursive;
+    display: flex;
+    gap: 2em;
+    position: absolute;
+    right: 10em;
+    top: 4em;
+  }
+  &__link {
+    text-decoration: none;
+    color: $color-text;
+  }
+}
+
