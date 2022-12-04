@@ -9,20 +9,36 @@ body {
   font-family: "Secular One", sans-serif;
   font-size: 45px;
   position: relative;
-  left: 5em;
+  left: 4em;
   padding-top: 0.3em;
 }
-.header__nav {
+.header__list {
   font-family: "Fredoka One", cursive;
+  list-style: none;
   display: flex;
   gap: 2em;
   position: absolute;
   right: 10em;
-  top: 4em;
+  top: 3.5em;
 }
 .header__link {
   text-decoration: none;
   color: #F5EBE0;
+}
+.header__dot {
+  position: absolute;
+  top: -4px;
+  background: transparent;
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  transition: all 0.3s linear;
+}
+.header__dot--active {
+  background: #FED049;
+}
+.header__item:hover .header__dot--hidden {
+  background: #AEBDCA;
 }
 
 /*# sourceMappingURL=style.css.map */
