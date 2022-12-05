@@ -1,0 +1,14 @@
+// This partial contains styling for global and non-repreat elements, such as body element
+@use "../styles/abstract/variables";
+
+@use "../styles/components/header";
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Kavoon&family=Secular+One&display=swap');
+
+body {
+  background-color: variables.$color__body;
+  color: variables.$color__text;
+}
+
+
+

@@ -1,9 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Kavoon&family=Secular+One&display=swap");
-body {
-  background-color: #182130;
-  color: #F5EBE0;
-}
-
 /* nav bar positioning */
 .header__title {
   font-family: "Secular One", sans-serif;
@@ -39,6 +34,11 @@ body {
 }
 .header__item:hover .header__dot--hidden {
   background: #AEBDCA;
+}
+
+body {
+  background-color: #182130;
+  color: #F5EBE0;
 }
 
 /*# sourceMappingURL=style.css.map */

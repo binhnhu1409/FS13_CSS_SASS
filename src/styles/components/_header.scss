@@ -1,13 +1,4 @@
-// This partial contains styling for global and non-repreat elements, such as body element
-@import './_typoraphy';
-@import './_variables';
-
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Kavoon&family=Secular+One&display=swap');
-
-body {
-  background-color: $color__body;
-  color: $color__text;
-}
+@use "../abstract/variables";
 
 /* nav bar positioning */
 .header {
@@ -29,7 +20,7 @@ body {
   }
   &__link {
     text-decoration: none;
-    color: $color__text;
+    color: variables.$color__text;
   }
   &__dot {
       position: absolute;
@@ -40,11 +31,10 @@ body {
       border-radius: 100%;
       transition: all 0.3s linear;
       &--active{
-        background: $color__dot--active;
+        background: variables.$color__dot--active;
       }
   }
   &__item:hover &__dot--hidden{
-    background: $color__dot--hidden;
+    background: variables.$color__dot--hidden;
   }
 }
-
