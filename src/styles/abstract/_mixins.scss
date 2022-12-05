@@ -1,6 +1,6 @@
 // This contains mixins and extends
 
-@mixin pinned-img($color-linear, $imgURL) {
+@mixin transparent-img($color-linear, $imgURL) {
   background: 
     /* top, transparent color linear */ 
     linear-gradient(
