@@ -36,6 +36,41 @@
   background: #AEBDCA;
 }
 
+.pinned {
+  display: grid;
+  grid-gap: 1em;
+  height: 27em;
+  padding: 2em 3.5em 3em 3.5em;
+}
+.pinned__post {
+  border-radius: 1em;
+}
+.pinned__post--one {
+  background: linear-gradient(rgba(187, 188, 203, 0.411), rgba(187, 188, 203, 0.411)), url("../assets/1coffee.jpg");
+  background-size: cover;
+  grid-area: 1/1/3/6;
+}
+.pinned__post--two {
+  background: linear-gradient(rgba(0, 13, 255, 0.45), rgba(0, 13, 255, 0.45)), url("../assets/2basketbal.jpg");
+  background-size: cover;
+  grid-area: 1/6/2/9;
+}
+.pinned__post--three {
+  background: linear-gradient(rgba(174, 0, 255, 0.45), rgba(174, 0, 255, 0.45)), url("../assets/3laptop.jpg");
+  background-size: cover;
+  grid-area: 2/6/3/9;
+}
+.pinned__post--four {
+  background: linear-gradient(rgba(251, 151, 58, 0.836), rgba(251, 151, 58, 0.836)), url("");
+  background-size: cover;
+  grid-area: 1/9/2/11;
+}
+.pinned__post--five {
+  background: linear-gradient(rgba(255, 0, 157, 0.563), rgba(255, 0, 157, 0.563)), url("../assets/4kindle.jpg");
+  background-size: cover;
+  grid-area: 2/9/3/11;
+}
+
 body {
   background-color: #182130;
   color: #F5EBE0;

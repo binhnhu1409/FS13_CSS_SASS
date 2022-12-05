@@ -1,0 +1,13 @@
+// This contains mixins and extends
+
+@mixin pinned-img($color-linear, $imgURL) {
+  background: 
+    /* top, transparent color linear */ 
+    linear-gradient(
+      $color-linear, 
+      $color-linear
+    ),
+    /* bottom, image */
+    url($imgURL);
+  background-size: cover;
+}
