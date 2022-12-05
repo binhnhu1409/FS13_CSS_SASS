@@ -66,7 +66,7 @@
   grid-area: 1/9/2/11;
 }
 .pinned__post--five {
-  background: linear-gradient(rgba(255, 79, 188, 0.722), rgba(255, 79, 188, 0.722)), url("../assets/4kindle.jpg");
+  background: linear-gradient(rgba(247, 134, 204, 0.722), rgba(247, 134, 204, 0.722)), url("../assets/4kindle.jpg");
   background-size: cover;
   grid-area: 2/9/3/11;
 }
@@ -94,6 +94,43 @@
   background: linear-gradient(rgba(187, 188, 203, 0.411), rgba(187, 188, 203, 0.411)), url("../assets/7chair.jpg");
   background-size: cover;
   grid-area: 3/1/4/2;
+}
+
+.old {
+  padding: 0 9em;
+}
+.old__container {
+  display: grid;
+  grid-gap: 2em;
+  height: 55em;
+}
+.old__posts {
+  border-radius: 1em;
+}
+.old__posts--one {
+  background: linear-gradient(rgba(200, 143, 227, 0.8), rgba(200, 143, 227, 0.8)), url("../assets/8coffeetable.jpg");
+  background-size: cover;
+  grid-area: 1/1/4/4;
+}
+.old__posts--two {
+  background: linear-gradient(rgba(235, 183, 106, 0.849), rgba(235, 183, 106, 0.849)), url("../assets/9chair.jpg");
+  background-size: cover;
+  grid-area: 1/4/4/7;
+}
+.old__posts--three {
+  background: linear-gradient(rgba(187, 188, 203, 0.411), rgba(187, 188, 203, 0.411)), url("../assets/10 chair.jpg");
+  background-size: cover;
+  grid-area: 4/1/8/3;
+}
+.old__posts--four {
+  background: linear-gradient(rgba(247, 134, 204, 0.722), rgba(247, 134, 204, 0.722)), url("../assets/11.jpg");
+  background-size: cover;
+  grid-area: 4/3/8/5;
+}
+.old__posts--five {
+  background: linear-gradient(rgba(187, 188, 203, 0.411), rgba(187, 188, 203, 0.411)), url("../assets/11chair.jpg");
+  background-size: cover;
+  grid-area: 4/5/8/7;
 }
 
 body {

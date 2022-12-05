@@ -6,6 +6,7 @@
 @use "../styles/components/header";
 @use "../styles/components/pinned_posts";
 @use "../styles/components/articles";
+@use "../styles/components/old_posts.scss";
 
 body {
   background-color: variables.$color__body;
