@@ -31,12 +31,29 @@
   color: variables.$color__text--dark;
 }
 
+.text-menu {
+  font-family: 'Fredoka One', cursive;
+}
+
 .text-title {
   font-family: 'Kavoon', cursive;
 }
 
 .text-author {
   font-family: 'Alexandria', sans-serif;
+}
+
+.link-color {
+  text-decoration: none;
+  color: variables.$color__text;
+}
+
+.dot-appear {
+  background: transparent;
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  transition: all 0.3s linear;
 }
 
 .divide-HRline {
@@ -57,4 +74,9 @@
   font-size: 12px;
   text-align: center;
   letter-spacing: 2px;
+}
+
+.list-flex-non-style {
+  list-style: none;
+  display: flex;
 }

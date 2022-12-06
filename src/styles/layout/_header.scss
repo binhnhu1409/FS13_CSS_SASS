@@ -1,4 +1,5 @@
 @use "../abstract/variables";
+@use "../abstract/mixins";
 
 /* nav bar positioning */
 .header {
@@ -11,7 +12,7 @@
     padding-top: 0.3em;
   }
   &__list {
-    font-family: 'Fredoka One', cursive;
+    @extend .text-menu;
     list-style: none;
     display: flex;
     gap: 2em;
@@ -20,20 +21,15 @@
     top: 3.5em;
   }
   &__link {
-    text-decoration: none;
-    color: variables.$color__text;
+    @extend .link-color;
   }
   &__dot {
-      position: absolute;
-      top: -4px;
-      background: transparent;
-      width: 6px;
-      height: 6px;
-      border-radius: 100%;
-      transition: all 0.3s linear;
-      &--active{
-        background: variables.$color__dot--active;
-      }
+    @extend .dot-appear; 
+    position: absolute;
+    top: -4px;
+    &--active{
+      background: variables.$color__dot--active;
+    }
   }
   &__item:hover &__dot--hidden{
     background: variables.$color__dot--hidden;

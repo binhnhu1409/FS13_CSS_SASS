@@ -3,12 +3,29 @@
   color: #28354F;
 }
 
+.text-menu, .footer__list, .header__list {
+  font-family: "Fredoka One", cursive;
+}
+
 .text-title, .subscribe__title, .old__title, .articles__title, .pinned__title {
   font-family: "Kavoon", cursive;
 }
 
-.text-author, .subscribe__subtitle, .subscribe__form input, .old__container p, .articles p, .pinned p, .text-spacing, .subscribe button, .old h2, .old button {
+.text-author, .footer p, .subscribe__subtitle, .subscribe__form input, .old__container p, .articles p, .pinned p, .text-spacing, .subscribe button, .old h2, .old button {
   font-family: "Alexandria", sans-serif;
+}
+
+.link-color, .footer__link, .header__link {
+  text-decoration: none;
+  color: #F5EBE0;
+}
+
+.dot-appear, .header__dot {
+  background: transparent;
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  transition: all 0.3s linear;
 }
 
 .divide-HRline, .old__posts hr, .articles hr {
@@ -30,6 +47,11 @@
   letter-spacing: 2px;
 }
 
+.list-flex-non-style, .footer__list, .social__list {
+  list-style: none;
+  display: flex;
+}
+
 /* nav bar positioning */
 .header__title {
   font-family: "Secular One", sans-serif;
@@ -40,7 +62,6 @@
   padding-top: 0.3em;
 }
 .header__list {
-  font-family: "Fredoka One", cursive;
   list-style: none;
   display: flex;
   gap: 2em;
@@ -48,18 +69,9 @@
   right: 10em;
   top: 3.5em;
 }
-.header__link {
-  text-decoration: none;
-  color: #F5EBE0;
-}
 .header__dot {
   position: absolute;
   top: -4px;
-  background: transparent;
-  width: 6px;
-  height: 6px;
-  border-radius: 100%;
-  transition: all 0.3s linear;
 }
 .header__dot--active {
   background: #FED049;
@@ -257,6 +269,34 @@
   border-radius: 1em;
   border: none;
   margin: 4em 0 2em 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 9em;
+  margin: 5em 0 1em 0;
+}
+.footer__list {
+  gap: 1em;
+  padding: 0;
+}
+.footer__link {
+  font-size: 14px;
+}
+.footer__dot {
+  background: red;
+  width: 6px;
+  height: 6px;
+}
+.footer p {
+  text-transform: uppercase;
+  color: #8b92a0;
+  font-size: 12px;
+}
+
+.social__list {
+  gap: 2em;
 }
 
 body {
