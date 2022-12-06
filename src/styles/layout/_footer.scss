@@ -20,20 +20,15 @@
   }
 
   &__dot {
-    // position: absolute;
-    // top: -1px;  
-    background: red;
-    width: 6px;
-    height: 6px;
-    // border-radius: 100%;
-    // transition: all 0.3s linear;
-    // &--active{
-    //   background: variables.$color__dot--active;
-    // }
+    @extend .dot-appear; 
+    display: inline-block;
+    &--active{
+      background: variables.$color__dot--active;
+    }
   }
-  // &__item:hover &__dot--hidden{
-  //   background: variables.$color__dot--hidden;
-  // }
+  &__item:hover &__dot--hidden{
+    background: variables.$color__dot--hidden;
+  }
 
   p {
     @extend .text-author;

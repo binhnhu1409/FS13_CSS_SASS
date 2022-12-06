@@ -20,12 +20,13 @@
   color: #F5EBE0;
 }
 
-.dot-appear, .header__dot {
+.dot-appear, .footer__dot, .header__dot {
   background: transparent;
   width: 6px;
   height: 6px;
   border-radius: 100%;
   transition: all 0.3s linear;
+  position: absolute;
 }
 
 .divide-HRline, .old__posts hr, .articles hr {
@@ -70,7 +71,6 @@
   top: 3.5em;
 }
 .header__dot {
-  position: absolute;
   top: -4px;
 }
 .header__dot--active {
@@ -285,9 +285,13 @@
   font-size: 14px;
 }
 .footer__dot {
-  background: red;
-  width: 6px;
-  height: 6px;
+  display: inline-block;
+}
+.footer__dot--active {
+  background: #FED049;
+}
+.footer__item:hover .footer__dot--hidden {
+  background: #AEBDCA;
 }
 .footer p {
   text-transform: uppercase;

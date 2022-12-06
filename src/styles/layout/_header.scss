@@ -25,7 +25,6 @@
   }
   &__dot {
     @extend .dot-appear; 
-    position: absolute;
     top: -4px;
     &--active{
       background: variables.$color__dot--active;
