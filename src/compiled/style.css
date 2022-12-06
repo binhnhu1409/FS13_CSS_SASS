@@ -3,11 +3,11 @@
   color: #28354F;
 }
 
-.text-title, .old__title, .articles__title, .pinned__title {
+.text-title, .subscribe__title, .old__title, .articles__title, .pinned__title {
   font-family: "Kavoon", cursive;
 }
 
-.text-author, .old__container p, .articles p, .pinned p, .text-spacing, .old h2, .old button {
+.text-author, .subscribe__subtitle, .subscribe__form input, .old__container p, .articles p, .pinned p, .text-spacing, .subscribe button, .old h2, .old button {
   font-family: "Alexandria", sans-serif;
 }
 
@@ -23,7 +23,7 @@
   background-color: #F5EBE0 !important;
 }
 
-.text-spacing, .old h2, .old button {
+.text-spacing, .subscribe button, .old h2, .old button {
   text-transform: uppercase;
   font-size: 12px;
   text-align: center;
@@ -227,6 +227,36 @@
 .btn__container {
   text-align: center;
   margin: 3em;
+}
+
+.subscribe {
+  text-align: center;
+}
+.subscribe__title {
+  font-size: 50px;
+  padding: 5rem 0 0 0;
+}
+.subscribe__subtitle {
+  position: relative;
+  top: -25px;
+}
+.subscribe__form input {
+  margin-top: 1em;
+  text-align: center;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #F5EBE0;
+  width: 30%;
+  font-size: 18px;
+}
+.subscribe button {
+  width: 11%;
+  padding: 2.5em 2em;
+  color: #F5EBE0;
+  background-color: rgba(37, 49, 73, 0.8039215686);
+  border-radius: 1em;
+  border: none;
+  margin: 4em 0 2em 0;
 }
 
 body {

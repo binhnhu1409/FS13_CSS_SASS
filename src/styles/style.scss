@@ -3,10 +3,12 @@
 @use "../styles/abstract/mixins";
 @use "../styles/abstract/typography";
 
-@use "../styles/components/header";
-@use "../styles/components/pinned_posts";
-@use "../styles/components/articles";
-@use "../styles/components/old_posts.scss";
+@use "../styles/layout/header";
+@use "../styles/layout/pinned_posts";
+@use "../styles/layout/articles";
+@use "../styles/layout/old_posts";
+@use "../styles/layout/subscribe";
+
 
 body {
   background-color: variables.$color__body;

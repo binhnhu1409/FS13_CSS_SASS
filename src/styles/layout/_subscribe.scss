@@ -1,0 +1,36 @@
+@use "../abstract/mixins";
+@use "../abstract/variables";
+
+.subscribe {
+  text-align: center;
+
+  &__title {
+    @extend .text-title;
+    font-size: 50px;
+    padding: 5rem 0 0 0;
+  }
+
+  &__subtitle {
+    @extend .text-author;
+    position: relative;
+    top: -25px;
+  }
+
+  &__form{
+    input {
+      @extend .text-author;
+      margin-top: 1em;
+      text-align: center;
+      background: transparent;
+      border: none;
+      border-bottom: 2px solid variables.$color__text;
+      width: 30%;
+      font-size: 18px;
+    }
+  }
+
+  button {
+    @include mixins.btn(11%);
+    margin: 4em 0 2em 0;
+  }
+}
