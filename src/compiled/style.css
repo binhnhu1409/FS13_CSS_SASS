@@ -1,8 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Kavoon&family=Secular+One&display=swap");
+.text-black, .pinned__post--dark {
+  color: #28354F;
+}
+
+.text-title, .pinned__title {
+  font-family: "Kavoon", cursive;
+}
+
+.text-author, .pinned p {
+  font-family: "Secular One", sans-serif;
+}
+
 /* nav bar positioning */
 .header__title {
   font-family: "Secular One", sans-serif;
   font-size: 45px;
+  width: fit-content;
   position: relative;
   left: 4em;
   padding-top: 0.3em;
@@ -42,33 +55,50 @@
   height: 27em;
   padding: 2em 3.5em 3em 3.5em;
 }
+.pinned p {
+  font-size: 14px;
+  position: relative;
+  top: 12%;
+  left: 7%;
+}
 .pinned__post {
   border-radius: 1em;
+  display: flex;
+  flex-direction: column-reverse;
 }
 .pinned__post--one {
   background: linear-gradient(rgba(187, 188, 203, 0.411), rgba(187, 188, 203, 0.411)), url("../assets/1coffee.jpg");
   background-size: cover;
-  grid-area: 1/1/3/6;
+  grid-area: 1/1/3/7;
 }
 .pinned__post--two {
   background: linear-gradient(rgba(0, 13, 255, 0.45), rgba(0, 13, 255, 0.45)), url("../assets/2basketbal.jpg");
   background-size: cover;
-  grid-area: 1/6/2/9;
+  grid-area: 1/7/2/10;
 }
 .pinned__post--three {
   background: linear-gradient(rgba(174, 0, 255, 0.45), rgba(174, 0, 255, 0.45)), url("../assets/3laptop.jpg");
   background-size: cover;
-  grid-area: 2/6/3/9;
+  grid-area: 2/7/3/10;
 }
 .pinned__post--four {
   background: linear-gradient(rgb(250, 172, 99), rgb(250, 172, 99)), url("");
   background-size: cover;
-  grid-area: 1/9/2/11;
+  grid-area: 1/10/2/13;
 }
 .pinned__post--five {
   background: linear-gradient(rgba(247, 134, 204, 0.722), rgba(247, 134, 204, 0.722)), url("../assets/4kindle.jpg");
   background-size: cover;
-  grid-area: 2/9/3/11;
+  grid-area: 2/10/3/13;
+}
+.pinned__title {
+  margin: 1em;
+}
+.pinned__title--big {
+  font-size: 45px;
+}
+.pinned__title--small {
+  font-size: 25px;
 }
 
 .articles {
@@ -110,32 +140,35 @@
 .old__posts--one {
   background: linear-gradient(rgba(200, 143, 227, 0.8), rgba(200, 143, 227, 0.8)), url("../assets/8coffeetable.jpg");
   background-size: cover;
-  grid-area: 1/1/4/4;
+  grid-area: 1/1/5/4;
 }
 .old__posts--two {
   background: linear-gradient(rgba(235, 183, 106, 0.849), rgba(235, 183, 106, 0.849)), url("../assets/9chair.jpg");
   background-size: cover;
-  grid-area: 1/4/4/7;
+  grid-area: 1/4/5/7;
 }
 .old__posts--three {
   background: linear-gradient(rgba(187, 188, 203, 0.411), rgba(187, 188, 203, 0.411)), url("../assets/10 chair.jpg");
   background-size: cover;
-  grid-area: 4/1/8/3;
+  grid-area: 5/1/9/3;
 }
 .old__posts--four {
   background: linear-gradient(rgba(247, 134, 204, 0.722), rgba(247, 134, 204, 0.722)), url("../assets/11.jpg");
   background-size: cover;
-  grid-area: 4/3/8/5;
+  grid-area: 5/3/9/5;
 }
 .old__posts--five {
   background: linear-gradient(rgba(187, 188, 203, 0.411), rgba(187, 188, 203, 0.411)), url("../assets/11chair.jpg");
   background-size: cover;
-  grid-area: 4/5/8/7;
+  grid-area: 5/5/9/7;
 }
 
 body {
   background-color: #182130;
   color: #F5EBE0;
+  padding: 0;
+  margin: 0;
+  word-break: break-word;
 }
 
 /*# sourceMappingURL=style.css.map */

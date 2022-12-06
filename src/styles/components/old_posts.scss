@@ -13,23 +13,23 @@
     border-radius: 1em;
     &--one {
       @include mixins.transparent-img (variables.$color__img--light-purple, '../assets/8coffeetable.jpg');
-      grid-area: 1/1/4/4;
+      grid-area: 1/1/5/4;
     }
     &--two {
       @include mixins.transparent-img (variables.$color__img--light-orange, '../assets/9chair.jpg');
-      grid-area: 1/4/4/7;
+      grid-area: 1/4/5/7;
     }
     &--three {
       @include mixins.transparent-img (variables.$color__img--grayish, '../assets/10 chair.jpg');
-      grid-area: 4/1/8/3;
+      grid-area: 5/1/9/3;
     }
     &--four {
       @include mixins.transparent-img (variables.$color__img--pink, '../assets/11.jpg');
-      grid-area: 4/3/8/5;
+      grid-area: 5/3/9/5;
     }
     &--five {
       @include mixins.transparent-img (variables.$color__img--grayish, '../assets/11chair.jpg');
-      grid-area: 4/5/8/7;
+      grid-area: 5/5/9/7;
     }
   }
 }

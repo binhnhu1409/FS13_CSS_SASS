@@ -6,27 +6,53 @@
   grid-gap: 1em;
   height: 27em;
   padding: 2em 3.5em 3em 3.5em;
+  
+  p {
+    @extend .text-author;
+    font-size: 14px;
+    position: relative;
+    top: 12%;
+    left: 7%;
+  }
+
   &__post {
     border-radius: 1em;
+    display: flex;
+    flex-direction: column-reverse;
     &--one {
       @include mixins.transparent-img (variables.$color__img--grayish, '../assets/1coffee.jpg');
-      grid-area: 1/1/3/6;
+      grid-area: 1/1/3/7;
     }
     &--two {
       @include mixins.transparent-img (variables.$color__img--blue, '../assets/2basketbal.jpg');
-      grid-area: 1/6/2/9;
+      grid-area: 1/7/2/10;
     }
     &--three {
       @include mixins.transparent-img (variables.$color__img--purple, '../assets/3laptop.jpg');
-      grid-area: 2/6/3/9;
+      grid-area: 2/7/3/10;
     }
     &--four {
       @include mixins.transparent-img (variables.$color__img--orange, '');
-      grid-area: 1/9/2/11;
+      grid-area: 1/10/2/13;
     }
     &--five {
       @include mixins.transparent-img (variables.$color__img--pink, '../assets/4kindle.jpg');
-      grid-area: 2/9/3/11;
+      grid-area: 2/10/3/13;
     }
+    &--dark{
+      @extend .text-black;
+    }
+  }
+
+  &__title{
+    @extend .text-title;
+    margin: 1em;
+    &--big{
+      font-size: 45px;
+    }
+    &--small{   
+      font-size: 25px;
+    }
+    
   }
 }

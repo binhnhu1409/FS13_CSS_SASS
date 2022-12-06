@@ -1,4 +1,5 @@
 // This contains mixins and extends
+@use "../abstract/variables";
 
 @mixin transparent-img($color-linear, $imgURL) {
   background: 
@@ -10,4 +11,16 @@
     /* bottom, image */
     url($imgURL);
   background-size: cover;
+}
+
+.text-black {
+  color: variables.$color__text--dark;
+}
+
+.text-title {
+  font-family: 'Kavoon', cursive;
+}
+
+.text-author {
+  font-family: 'Secular One', sans-serif;
 }
