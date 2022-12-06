@@ -6,8 +6,26 @@
   grid-gap: 2.5em;
   padding: 0 9em;
   height: 100em;
+
+  p {
+    @extend .text-author;
+    position: relative;
+    top: -10%;
+  }
+
+  hr {
+    @extend .text-black;
+    width: 3%;
+    border: 1px solid variables.$color__text--dark;
+    background-color: variables.$color__text--dark;
+    position: relative;
+    top: -8%;
+    margin-left: 0;
+  }
+
   &__post {
     border-radius: 1em;
+    padding: 3em 8em;
     &--one {
       @include mixins.transparent-img (variables.$color__img--grayish, '../assets/5pillow.jpg');
       grid-area: 1/1/2/2;
@@ -20,5 +38,18 @@
       @include mixins.transparent-img (variables.$color__img--grayish, '../assets/7chair.jpg');
       grid-area: 3/1/4/2;
     }
+    &--dark {
+      @extend .text-black;
+    }
+  }
+
+  &__title {
+    @extend .text-title;
+    z-index: 1;
+    font-size: 65px;
+  }
+
+  &__content {
+    font-size: 20px;
   }
 }

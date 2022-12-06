@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Kavoon&family=Secular+One&display=swap");
-.text-black, .pinned__post--dark {
+.text-black, .articles hr, .articles__post--dark, .pinned__post--dark {
   color: #28354F;
 }
 
-.text-title, .pinned__title {
+.text-title, .articles__title, .pinned__title {
   font-family: "Kavoon", cursive;
 }
 
-.text-author, .pinned p {
+.text-author, .articles p, .pinned p {
   font-family: "Secular One", sans-serif;
 }
 
@@ -107,8 +107,21 @@
   padding: 0 9em;
   height: 100em;
 }
+.articles p {
+  position: relative;
+  top: -10%;
+}
+.articles hr {
+  width: 3%;
+  border: 1px solid #28354F;
+  background-color: #28354F;
+  position: relative;
+  top: -8%;
+  margin-left: 0;
+}
 .articles__post {
   border-radius: 1em;
+  padding: 3em 8em;
 }
 .articles__post--one {
   background: linear-gradient(rgba(187, 188, 203, 0.411), rgba(187, 188, 203, 0.411)), url("../assets/5pillow.jpg");
@@ -124,6 +137,13 @@
   background: linear-gradient(rgba(187, 188, 203, 0.411), rgba(187, 188, 203, 0.411)), url("../assets/7chair.jpg");
   background-size: cover;
   grid-area: 3/1/4/2;
+}
+.articles__title {
+  z-index: 1;
+  font-size: 65px;
+}
+.articles__content {
+  font-size: 20px;
 }
 
 .old {
