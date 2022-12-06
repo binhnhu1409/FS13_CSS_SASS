@@ -4,13 +4,26 @@
 .old {
   padding: 0 9em;
 
+  h2 {
+    @extend .text-spacing;
+    margin: 5em 0 4em 0;
+  }
+
   &__container {
     display: grid;
     grid-gap: 2em;
     height: 55em;
+    p {
+      @extend .text-author;
+    }
   }
+
   &__posts{
     border-radius: 1em;
+    padding: 2em;
+    hr {
+      @extend .divide-HRline;
+    }
     &--one {
       @include mixins.transparent-img (variables.$color__img--light-purple, '../assets/8coffeetable.jpg');
       grid-area: 1/1/5/4;
@@ -31,5 +44,39 @@
       @include mixins.transparent-img (variables.$color__img--grayish, '../assets/11chair.jpg');
       grid-area: 5/5/9/7;
     }
+    &--dark {
+      @extend .text-black;
+    }
   }
+
+  &__title {
+    @extend .text-title;
+    z-index: 1;
+    
+    &--big {
+      font-size: 45px;
+    }
+    &--small {
+      font-size: 35px;
+    }
+  }
+
+  &__content {
+    font-size: 13px;
+    padding: 0 6em 2em 0;
+    font-weight: bold;
+  }
+
+  &__line--white{
+    @extend .divide-HRline-white;
+  }
+
+  button {
+    @include mixins.btn(80%);
+  }
+}
+
+.btn__container{
+  text-align: center;
+  margin: 3em;
 }

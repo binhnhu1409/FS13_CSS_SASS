@@ -1,14 +1,33 @@
-@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Kavoon&family=Secular+One&display=swap");
-.text-black, .articles hr, .articles__post--dark, .pinned__post--dark {
+@import url("https://fonts.googleapis.com/css2?family=Alexandria&family=Fredoka+One&family=Kanit&family=Kavoon&family=Secular+One&display=swap");
+.text-black, .old__posts--dark, .articles__post--dark, .pinned__post--dark {
   color: #28354F;
 }
 
-.text-title, .articles__title, .pinned__title {
+.text-title, .old__title, .articles__title, .pinned__title {
   font-family: "Kavoon", cursive;
 }
 
-.text-author, .articles p, .pinned p {
-  font-family: "Secular One", sans-serif;
+.text-author, .old__container p, .articles p, .pinned p, .text-spacing, .old h2, .old button {
+  font-family: "Alexandria", sans-serif;
+}
+
+.divide-HRline, .old__posts hr, .articles hr {
+  width: 3%;
+  border: 1px solid #28354F;
+  background-color: #28354F;
+  margin-left: 0;
+}
+
+.divide-HRline-white, .old__line--white {
+  border: 1px solid #F5EBE0 !important;
+  background-color: #F5EBE0 !important;
+}
+
+.text-spacing, .old h2, .old button {
+  text-transform: uppercase;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 2px;
 }
 
 /* nav bar positioning */
@@ -112,12 +131,8 @@
   top: -10%;
 }
 .articles hr {
-  width: 3%;
-  border: 1px solid #28354F;
-  background-color: #28354F;
   position: relative;
   top: -8%;
-  margin-left: 0;
 }
 .articles__post {
   border-radius: 1em;
@@ -149,6 +164,9 @@
 .old {
   padding: 0 9em;
 }
+.old h2 {
+  margin: 5em 0 4em 0;
+}
 .old__container {
   display: grid;
   grid-gap: 2em;
@@ -156,6 +174,7 @@
 }
 .old__posts {
   border-radius: 1em;
+  padding: 2em;
 }
 .old__posts--one {
   background: linear-gradient(rgba(200, 143, 227, 0.8), rgba(200, 143, 227, 0.8)), url("../assets/8coffeetable.jpg");
@@ -181,6 +200,33 @@
   background: linear-gradient(rgba(187, 188, 203, 0.411), rgba(187, 188, 203, 0.411)), url("../assets/11chair.jpg");
   background-size: cover;
   grid-area: 5/5/9/7;
+}
+.old__title {
+  z-index: 1;
+}
+.old__title--big {
+  font-size: 45px;
+}
+.old__title--small {
+  font-size: 35px;
+}
+.old__content {
+  font-size: 13px;
+  padding: 0 6em 2em 0;
+  font-weight: bold;
+}
+.old button {
+  width: 80%;
+  padding: 2.5em 2em;
+  color: #F5EBE0;
+  background-color: rgba(37, 49, 73, 0.8039215686);
+  border-radius: 1em;
+  border: none;
+}
+
+.btn__container {
+  text-align: center;
+  margin: 3em;
 }
 
 body {

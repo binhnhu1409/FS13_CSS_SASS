@@ -1,6 +1,8 @@
 // This contains mixins and extends
 @use "../abstract/variables";
 
+
+// mixins section
 @mixin transparent-img($color-linear, $imgURL) {
   background: 
     /* top, transparent color linear */ 
@@ -13,6 +15,18 @@
   background-size: cover;
 }
 
+@mixin btn($width) {
+  @extend .text-spacing;
+  width: $width;
+  padding: 2.5em 2em;
+  color: variables.$color__text;
+  background-color: variables.$color__button;
+  border-radius: 1em;
+  border: none;
+}
+
+
+// extend section
 .text-black {
   color: variables.$color__text--dark;
 }
@@ -22,5 +36,25 @@
 }
 
 .text-author {
-  font-family: 'Secular One', sans-serif;
+  font-family: 'Alexandria', sans-serif;
+}
+
+.divide-HRline {
+  width: 3%;
+  border: 1px solid variables.$color__text--dark;
+  background-color: variables.$color__text--dark;
+  margin-left: 0;
+}
+
+.divide-HRline-white {
+  border: 1px solid variables.$color__text !important;
+  background-color: variables.$color__text !important;
+}
+
+.text-spacing {
+  @extend .text-author;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 2px;
 }

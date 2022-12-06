@@ -14,13 +14,9 @@
   }
 
   hr {
-    @extend .text-black;
-    width: 3%;
-    border: 1px solid variables.$color__text--dark;
-    background-color: variables.$color__text--dark;
+    @extend .divide-HRline;
     position: relative;
     top: -8%;
-    margin-left: 0;
   }
 
   &__post {
