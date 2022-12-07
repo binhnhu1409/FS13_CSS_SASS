@@ -32,6 +32,10 @@
 }
 
 // extend section
+.border-corner {
+  border-radius: 1em;
+}
+
 .text-black {
   color: variables.$color__text--dark;
 }
@@ -92,4 +96,14 @@
   background-color: variables.$color__img--orange;
   font-weight: bold;
   cursor: pointer;
+}
+
+.arrow-invisible {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.arrow-visible {
+  opacity: 1;
+  padding-left: .3em ;
 }

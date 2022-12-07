@@ -19,10 +19,9 @@
   }
 
   &__posts{
-    border-radius: 1em;
+    @extend .border-corner;
     padding: 2em;
     background-size: 100%;
-    // background-position: center;
     overflow: hidden;
     transition: background-size 2s ease-out;
     hr {
@@ -52,10 +51,9 @@
       @extend .text-black;
     }
   }
-  
+
   &__posts:hover {
     background-size: 102%;
-    
   }
 
   &__title {
@@ -70,13 +68,11 @@
   }
 
   &__arrow {
-    opacity: 0;
-    transition: 0.5s;
+    @extend .arrow-invisible;
   }
 
   &__title:hover &__arrow {
-    opacity: 1;
-    padding-left: .3em ;
+    @extend .arrow-visible;
   }
 
   &__content {

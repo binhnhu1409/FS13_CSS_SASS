@@ -20,8 +20,10 @@
   }
 
   &__post {
-    border-radius: 1em;
+    @extend .border-corner;
     padding: 3em 8em;
+    background-size: 100%;
+    transition: background-size 2s ease-out;
     &--one {
       @include mixins.transparent-img (variables.$color__img--grayish, '../assets/5pillow.jpg');
       grid-area: 1/1/2/2;
@@ -39,10 +41,22 @@
     }
   }
 
+  &__post:hover {
+    background-size: 102%;
+  }
+
   &__title {
     @extend .text-title;
     z-index: 1;
     font-size: 65px;
+  }
+
+  &__arrow {
+    @extend .arrow-invisible;
+  }
+
+  &__title:hover &__arrow {
+    @extend .arrow-visible;
   }
 
   &__content {

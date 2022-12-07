@@ -16,7 +16,7 @@
   }
 
   &__post {
-    border-radius: 1em;
+    @extend .border-corner;
     display: flex;
     flex-direction: column-reverse;
     &--one {
