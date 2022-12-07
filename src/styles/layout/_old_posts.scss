@@ -21,6 +21,10 @@
   &__posts{
     border-radius: 1em;
     padding: 2em;
+    background-size: 100%;
+    // background-position: center;
+    overflow: hidden;
+    transition: background-size 2s ease-out;
     hr {
       @extend .divide-HRline;
     }
@@ -48,17 +52,31 @@
       @extend .text-black;
     }
   }
+  
+  &__posts:hover {
+    background-size: 102%;
+    
+  }
 
   &__title {
     @extend .text-title;
     z-index: 1;
-    
     &--big {
       font-size: 45px;
     }
     &--small {
       font-size: 35px;
     }
+  }
+
+  &__arrow {
+    opacity: 0;
+    transition: 0.5s;
+  }
+
+  &__title:hover &__arrow {
+    opacity: 1;
+    padding-left: .3em ;
   }
 
   &__content {
@@ -73,6 +91,10 @@
 
   button {
     @include mixins.btn(80%);
+    transition: all .2s linear;
+  }
+  button:hover {
+    @include mixins.btn-hover(82%);
   }
 }
 

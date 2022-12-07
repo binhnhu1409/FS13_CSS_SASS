@@ -53,7 +53,7 @@
   display: flex;
 }
 
-.btn-hover, .subscribe button:hover {
+.btn-hover, .subscribe button:hover, .old button:hover {
   color: rgba(37, 49, 73, 0.8039215686);
   background-color: rgb(250, 172, 99);
   font-weight: bold;
@@ -136,26 +136,31 @@
 .pinned__post--one {
   background: linear-gradient(rgba(187, 188, 203, 0.411), rgba(187, 188, 203, 0.411)), url("../assets/1coffee.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   grid-area: 1/1/3/7;
 }
 .pinned__post--two {
   background: linear-gradient(rgba(0, 13, 255, 0.45), rgba(0, 13, 255, 0.45)), url("../assets/2basketbal.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   grid-area: 1/7/2/10;
 }
 .pinned__post--three {
   background: linear-gradient(rgba(174, 0, 255, 0.45), rgba(174, 0, 255, 0.45)), url("../assets/3laptop.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   grid-area: 2/7/3/10;
 }
 .pinned__post--four {
   background: linear-gradient(rgb(250, 172, 99), rgb(250, 172, 99)), url("");
   background-size: cover;
+  background-repeat: no-repeat;
   grid-area: 1/10/2/13;
 }
 .pinned__post--five {
   background: linear-gradient(rgba(247, 134, 204, 0.722), rgba(247, 134, 204, 0.722)), url("../assets/4kindle.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   grid-area: 2/10/3/13;
 }
 .pinned__title {
@@ -189,16 +194,19 @@
 .articles__post--one {
   background: linear-gradient(rgba(187, 188, 203, 0.411), rgba(187, 188, 203, 0.411)), url("../assets/5pillow.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   grid-area: 1/1/2/2;
 }
 .articles__post--two {
   background: linear-gradient(rgba(237, 210, 114, 0.79), rgba(237, 210, 114, 0.79)), url("../assets/6plant pot.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   grid-area: 2/1/3/2;
 }
 .articles__post--three {
   background: linear-gradient(rgba(187, 188, 203, 0.411), rgba(187, 188, 203, 0.411)), url("../assets/7chair.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   grid-area: 3/1/4/2;
 }
 .articles__title {
@@ -223,31 +231,42 @@
 .old__posts {
   border-radius: 1em;
   padding: 2em;
+  background-size: 100%;
+  overflow: hidden;
+  transition: background-size 2s ease-out;
 }
 .old__posts--one {
   background: linear-gradient(rgba(200, 143, 227, 0.8), rgba(200, 143, 227, 0.8)), url("../assets/8coffeetable.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   grid-area: 1/1/5/4;
 }
 .old__posts--two {
   background: linear-gradient(rgba(235, 183, 106, 0.849), rgba(235, 183, 106, 0.849)), url("../assets/9chair.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   grid-area: 1/4/5/7;
 }
 .old__posts--three {
   background: linear-gradient(rgba(187, 188, 203, 0.411), rgba(187, 188, 203, 0.411)), url("../assets/10 chair.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   grid-area: 5/1/9/3;
 }
 .old__posts--four {
   background: linear-gradient(rgba(247, 134, 204, 0.722), rgba(247, 134, 204, 0.722)), url("../assets/11.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   grid-area: 5/3/9/5;
 }
 .old__posts--five {
   background: linear-gradient(rgba(187, 188, 203, 0.411), rgba(187, 188, 203, 0.411)), url("../assets/11chair.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   grid-area: 5/5/9/7;
+}
+.old__posts:hover {
+  background-size: 102%;
 }
 .old__title {
   z-index: 1;
@@ -257,6 +276,14 @@
 }
 .old__title--small {
   font-size: 35px;
+}
+.old__arrow {
+  opacity: 0;
+  transition: 0.5s;
+}
+.old__title:hover .old__arrow {
+  opacity: 1;
+  padding-left: 0.3em;
 }
 .old__content {
   font-size: 13px;
@@ -270,6 +297,10 @@
   background-color: rgba(37, 49, 73, 0.8039215686);
   border-radius: 1em;
   border: none;
+  transition: all 0.2s linear;
+}
+.old button:hover {
+  width: 82%;
 }
 
 .btn__container {

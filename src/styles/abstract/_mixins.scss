@@ -13,6 +13,7 @@
     /* bottom, image */
     url($imgURL);
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @mixin btn($width) {
