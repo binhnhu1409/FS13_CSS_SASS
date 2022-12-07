@@ -1,0 +1,109 @@
+// This contains mixins and extends
+@use "../abstract/variables";
+
+
+// mixins section
+@mixin transparent-img($color-linear, $imgURL) {
+  background: 
+    /* top, transparent color linear */ 
+    linear-gradient(
+      $color-linear, 
+      $color-linear
+    ),
+    /* bottom, image */
+    url($imgURL);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@mixin btn($width) {
+  @extend .text-spacing;
+  width: $width;
+  padding: 2.5em 2em;
+  color: variables.$color__text;
+  background-color: variables.$color__button;
+  border-radius: 1em;
+  border: none;
+}
+
+@mixin btn-hover ($width) {
+  @extend .btn-hover;
+  width: $width;
+}
+
+// extend section
+.border-corner {
+  border-radius: 1em;
+}
+
+.text-black {
+  color: variables.$color__text--dark;
+}
+
+.text-menu {
+  font-family: 'Fredoka One', cursive;
+}
+
+.text-title {
+  font-family: 'Kavoon', cursive;
+}
+
+.text-author {
+  font-family: 'Alexandria', sans-serif;
+}
+
+.link-color {
+  text-decoration: none;
+  color: variables.$color__text;
+}
+
+.dot-appear {
+  background: transparent;
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  transition: all 0.3s linear;
+  position: absolute;
+}
+
+.divide-HRline {
+  width: 3%;
+  border: 1px solid variables.$color__text--dark;
+  background-color: variables.$color__text--dark;
+  margin-left: 0;
+}
+
+.divide-HRline-white {
+  border: 1px solid variables.$color__text !important;
+  background-color: variables.$color__text !important;
+}
+
+.text-spacing {
+  @extend .text-author;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.list-flex-non-style {
+  list-style: none;
+  display: flex;
+}
+
+.btn-hover {
+  color: variables.$color__button;
+  background-color: variables.$color__img--orange;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.arrow-invisible {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.arrow-visible {
+  opacity: 1;
+  padding-left: .3em ;
+}

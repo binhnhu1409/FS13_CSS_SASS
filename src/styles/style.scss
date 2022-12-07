@@ -1,0 +1,24 @@
+// This partial contains styling for global and non-repreat elements, such as body element
+@use "../styles/abstract/variables";
+@use "../styles/abstract/mixins";
+
+@use "../styles/base/typography";
+@use "../styles/base/animation";
+
+@use "../styles/layout/header";
+@use "../styles/layout/pinned_posts";
+@use "../styles/layout/articles";
+@use "../styles/layout/old_posts";
+@use "../styles/layout/subscribe";
+@use "../styles/layout/footer";
+
+body {
+  background-color: variables.$color__body;
+  color: variables.$color__text;
+  padding: 0;
+  margin: 0;
+  word-break:break-word;
+}
+
+
+

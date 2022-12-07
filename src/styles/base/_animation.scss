@@ -1,0 +1,31 @@
+@use "../abstract/variables";
+
+@keyframes typing {
+  0%  {
+    width: 0;
+  }
+  35% {
+    width: 100%;
+  }
+  75% {
+    width: 100%; /* from 35%-75% only cursor blinking, waiting for reverse*/
+  }
+  90% {
+    width: 0;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes blink-cursor {
+  from {
+    border-color: transparent;
+  }
+  50% {
+    border-color: variables.$color__text;
+  }
+  to {
+    border-color: transparent;
+  }
+}

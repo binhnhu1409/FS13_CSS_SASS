@@ -6,7 +6,7 @@ Refer to this [link](https://preview.themeforest.net/item/maido-multipurpose-gho
 
 1. Floating the HTML elements using Flexbox and Grid system
 2. Implementing basic animations as shown in the webpage (hover effect,
-active link styles, typing effect). You can modify the outlook of the effects
+   active link styles, typing effect). You can modify the outlook of the effects
 3. Implement you codes, using the platform of your choice (For example, Github Pages), then rewrite README file.
 
 This assignment only requires 1 static page. No JavaScript needed.

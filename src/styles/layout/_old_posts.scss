@@ -1,0 +1,100 @@
+@use "../abstract/mixins";
+@use "../abstract/variables";
+
+.old {
+  padding: 0 9em;
+
+  h2 {
+    @extend .text-spacing;
+    margin: 5em 0 4em 0;
+  }
+
+  &__container {
+    display: grid;
+    grid-gap: 2em;
+    height: 55em;
+    p {
+      @extend .text-author;
+    }
+  }
+
+  &__posts{
+    @extend .border-corner;
+    padding: 2em;
+    background-size: 100%;
+    overflow: hidden;
+    transition: background-size 2s ease-out;
+    hr {
+      @extend .divide-HRline;
+    }
+    &--one {
+      @include mixins.transparent-img (variables.$color__img--light-purple, '../assets/8coffeetable.jpg');
+      grid-area: 1/1/5/4;
+    }
+    &--two {
+      @include mixins.transparent-img (variables.$color__img--light-orange, '../assets/9chair.jpg');
+      grid-area: 1/4/5/7;
+    }
+    &--three {
+      @include mixins.transparent-img (variables.$color__img--grayish, '../assets/10 chair.jpg');
+      grid-area: 5/1/9/3;
+    }
+    &--four {
+      @include mixins.transparent-img (variables.$color__img--pink, '../assets/11.jpg');
+      grid-area: 5/3/9/5;
+    }
+    &--five {
+      @include mixins.transparent-img (variables.$color__img--grayish, '../assets/11chair.jpg');
+      grid-area: 5/5/9/7;
+    }
+    &--dark {
+      @extend .text-black;
+    }
+  }
+
+  &__posts:hover {
+    background-size: 102%;
+  }
+
+  &__title {
+    @extend .text-title;
+    z-index: 1;
+    &--big {
+      font-size: 45px;
+    }
+    &--small {
+      font-size: 35px;
+    }
+  }
+
+  &__arrow {
+    @extend .arrow-invisible;
+  }
+
+  &__title:hover &__arrow {
+    @extend .arrow-visible;
+  }
+
+  &__content {
+    font-size: 13px;
+    padding: 0 6em 2em 0;
+    font-weight: bold;
+  }
+
+  &__line--white{
+    @extend .divide-HRline-white;
+  }
+
+  button {
+    @include mixins.btn(80%);
+    transition: all .2s linear;
+  }
+  button:hover {
+    @include mixins.btn-hover(82%);
+  }
+}
+
+.btn__container{
+  text-align: center;
+  margin: 3em;
+}

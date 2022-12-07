@@ -1,0 +1,65 @@
+@use "../abstract/mixins";
+@use "../abstract/variables";
+
+.articles {
+  display: grid;
+  grid-gap: 2.5em;
+  padding: 0 9em;
+  height: 100em;
+
+  p {
+    @extend .text-author;
+    position: relative;
+    top: -10%;
+  }
+
+  hr {
+    @extend .divide-HRline;
+    position: relative;
+    top: -8%;
+  }
+
+  &__post {
+    @extend .border-corner;
+    padding: 3em 8em;
+    background-size: 100%;
+    transition: background-size 2s ease-out;
+    &--one {
+      @include mixins.transparent-img (variables.$color__img--grayish, '../assets/5pillow.jpg');
+      grid-area: 1/1/2/2;
+    }
+    &--two{
+      @include mixins.transparent-img (variables.$color__img--yellow, '../assets/6plant pot.jpg');
+      grid-area: 2/1/3/2;
+    }
+    &--three{
+      @include mixins.transparent-img (variables.$color__img--grayish, '../assets/7chair.jpg');
+      grid-area: 3/1/4/2;
+    }
+    &--dark {
+      @extend .text-black;
+    }
+  }
+
+  &__post:hover {
+    background-size: 102%;
+  }
+
+  &__title {
+    @extend .text-title;
+    z-index: 1;
+    font-size: 65px;
+  }
+
+  &__arrow {
+    @extend .arrow-invisible;
+  }
+
+  &__title:hover &__arrow {
+    @extend .arrow-visible;
+  }
+
+  &__content {
+    font-size: 20px;
+  }
+}

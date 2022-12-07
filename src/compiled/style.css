@@ -1,0 +1,424 @@
+@import url("https://fonts.googleapis.com/css2?family=Alexandria&family=Fredoka+One&family=Kanit&family=Kavoon&family=Secular+One&display=swap");
+.border-corner, .old__posts, .articles__post, .pinned__post {
+  border-radius: 1em;
+}
+
+.text-black, .old__posts--dark, .articles__post--dark, .pinned__post--dark {
+  color: #28354F;
+}
+
+.text-menu, .footer__list, .header__list {
+  font-family: "Fredoka One", cursive;
+}
+
+.text-title, .subscribe__title, .old__title, .articles__title, .pinned__title {
+  font-family: "Kavoon", cursive;
+}
+
+.text-author, .footer p, .subscribe__subtitle, .subscribe__form input, .old__container p, .articles p, .pinned p, .text-spacing, .subscribe button, .old h2, .old button, .header__slogan {
+  font-family: "Alexandria", sans-serif;
+}
+
+.link-color, .footer__link, .header__link {
+  text-decoration: none;
+  color: #F5EBE0;
+}
+
+.dot-appear, .footer__dot, .header__dot {
+  background: transparent;
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  transition: all 0.3s linear;
+  position: absolute;
+}
+
+.divide-HRline, .old__posts hr, .articles hr {
+  width: 3%;
+  border: 1px solid #28354F;
+  background-color: #28354F;
+  margin-left: 0;
+}
+
+.divide-HRline-white, .old__line--white {
+  border: 1px solid #F5EBE0 !important;
+  background-color: #F5EBE0 !important;
+}
+
+.text-spacing, .subscribe button, .old h2, .old button, .header__slogan {
+  text-transform: uppercase;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.list-flex-non-style, .footer__list, .social__list {
+  list-style: none;
+  display: flex;
+}
+
+.btn-hover, .subscribe button:hover, .old button:hover {
+  color: rgba(37, 49, 73, 0.8039215686);
+  background-color: rgb(250, 172, 99);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.arrow-invisible, .old__arrow, .articles__arrow {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.arrow-visible, .old__title:hover .old__arrow, .articles__title:hover .articles__arrow {
+  opacity: 1;
+  padding-left: 0.3em;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  35% {
+    width: 100%;
+  }
+  75% {
+    width: 100%;
+    /* from 35%-75% only cursor blinking, waiting for reverse*/
+  }
+  90% {
+    width: 0;
+  }
+  100% {
+    width: 0;
+  }
+}
+@keyframes blink-cursor {
+  from {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #F5EBE0;
+  }
+  to {
+    border-color: transparent;
+  }
+}
+/* nav bar positioning */
+.header__title {
+  font-family: "Secular One", sans-serif;
+  font-size: 45px;
+  width: fit-content;
+  position: relative;
+  left: 4em;
+  padding-top: 0.3em;
+}
+.header__list {
+  list-style: none;
+  display: flex;
+  gap: 2em;
+  position: absolute;
+  right: 10em;
+  top: 3.5em;
+}
+.header__dot {
+  top: -4px;
+}
+.header__dot--active {
+  background: #FED049;
+}
+.header__item:hover .header__dot--hidden {
+  background: #AEBDCA;
+}
+.header__slogan {
+  text-transform: none !important;
+  position: fixed;
+  transform: rotate(-90deg);
+  top: 50%;
+  left: -5%;
+}
+
+.pinned {
+  display: grid;
+  grid-gap: 1em;
+  height: 27em;
+  padding: 2em 3.5em 3em 3.5em;
+}
+.pinned p {
+  font-size: 14px;
+  position: relative;
+  top: 12%;
+  left: 7%;
+}
+.pinned__post {
+  display: flex;
+  flex-direction: column-reverse;
+  transition: 0.2s linear;
+}
+.pinned__post--one {
+  background: linear-gradient(rgba(187, 188, 203, 0.411), rgba(187, 188, 203, 0.411)), url("../assets/1coffee.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-area: 1/1/3/7;
+}
+.pinned__post--two {
+  background: linear-gradient(rgba(0, 13, 255, 0.45), rgba(0, 13, 255, 0.45)), url("../assets/2basketbal.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-area: 1/7/2/10;
+}
+.pinned__post--three {
+  background: linear-gradient(rgba(174, 0, 255, 0.45), rgba(174, 0, 255, 0.45)), url("../assets/3laptop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-area: 2/7/3/10;
+}
+.pinned__post--four {
+  background: linear-gradient(rgb(250, 172, 99), rgb(250, 172, 99)), url("");
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-area: 1/10/2/13;
+}
+.pinned__post--five {
+  background: linear-gradient(rgba(247, 134, 204, 0.722), rgba(247, 134, 204, 0.722)), url("../assets/4kindle.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-area: 2/10/3/13;
+}
+.pinned__post:hover {
+  transform: translateY(-4px);
+}
+.pinned__title {
+  margin: 1em;
+}
+.pinned__title--big {
+  font-size: 45px;
+}
+.pinned__title--small {
+  font-size: 25px;
+}
+
+.articles {
+  display: grid;
+  grid-gap: 2.5em;
+  padding: 0 9em;
+  height: 100em;
+}
+.articles p {
+  position: relative;
+  top: -10%;
+}
+.articles hr {
+  position: relative;
+  top: -8%;
+}
+.articles__post {
+  padding: 3em 8em;
+  background-size: 100%;
+  transition: background-size 2s ease-out;
+}
+.articles__post--one {
+  background: linear-gradient(rgba(187, 188, 203, 0.411), rgba(187, 188, 203, 0.411)), url("../assets/5pillow.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-area: 1/1/2/2;
+}
+.articles__post--two {
+  background: linear-gradient(rgba(237, 210, 114, 0.79), rgba(237, 210, 114, 0.79)), url("../assets/6plant pot.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-area: 2/1/3/2;
+}
+.articles__post--three {
+  background: linear-gradient(rgba(187, 188, 203, 0.411), rgba(187, 188, 203, 0.411)), url("../assets/7chair.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-area: 3/1/4/2;
+}
+.articles__post:hover {
+  background-size: 102%;
+}
+.articles__title {
+  z-index: 1;
+  font-size: 65px;
+}
+.articles__content {
+  font-size: 20px;
+}
+
+.old {
+  padding: 0 9em;
+}
+.old h2 {
+  margin: 5em 0 4em 0;
+}
+.old__container {
+  display: grid;
+  grid-gap: 2em;
+  height: 55em;
+}
+.old__posts {
+  padding: 2em;
+  background-size: 100%;
+  overflow: hidden;
+  transition: background-size 2s ease-out;
+}
+.old__posts--one {
+  background: linear-gradient(rgba(200, 143, 227, 0.8), rgba(200, 143, 227, 0.8)), url("../assets/8coffeetable.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-area: 1/1/5/4;
+}
+.old__posts--two {
+  background: linear-gradient(rgba(235, 183, 106, 0.849), rgba(235, 183, 106, 0.849)), url("../assets/9chair.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-area: 1/4/5/7;
+}
+.old__posts--three {
+  background: linear-gradient(rgba(187, 188, 203, 0.411), rgba(187, 188, 203, 0.411)), url("../assets/10 chair.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-area: 5/1/9/3;
+}
+.old__posts--four {
+  background: linear-gradient(rgba(247, 134, 204, 0.722), rgba(247, 134, 204, 0.722)), url("../assets/11.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-area: 5/3/9/5;
+}
+.old__posts--five {
+  background: linear-gradient(rgba(187, 188, 203, 0.411), rgba(187, 188, 203, 0.411)), url("../assets/11chair.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-area: 5/5/9/7;
+}
+.old__posts:hover {
+  background-size: 102%;
+}
+.old__title {
+  z-index: 1;
+}
+.old__title--big {
+  font-size: 45px;
+}
+.old__title--small {
+  font-size: 35px;
+}
+.old__content {
+  font-size: 13px;
+  padding: 0 6em 2em 0;
+  font-weight: bold;
+}
+.old button {
+  width: 80%;
+  padding: 2.5em 2em;
+  color: #F5EBE0;
+  background-color: rgba(37, 49, 73, 0.8039215686);
+  border-radius: 1em;
+  border: none;
+  transition: all 0.2s linear;
+}
+.old button:hover {
+  width: 82%;
+}
+
+.btn__container {
+  text-align: center;
+  margin: 3em;
+}
+
+.subscribe {
+  text-align: center;
+}
+.subscribe__title {
+  font-size: 50px;
+  padding: 5rem 0 0 0;
+}
+.subscribe__container {
+  display: inline-block;
+  /* note for myself: to stop the cursor at the last letter */
+}
+.subscribe__subtitle {
+  letter-spacing: 0.1em;
+  position: relative;
+  top: -25px;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid #F5EBE0;
+  /* The type cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  animation: typing 12s steps(55, start) forwards infinite, blink-cursor 0.6s step-end infinite;
+}
+.subscribe__form input {
+  margin-top: 1em;
+  text-align: center;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #F5EBE0;
+  width: 30%;
+  font-size: 18px;
+  cursor: text;
+  transition: all 0.8s ease;
+}
+.subscribe__form input:focus {
+  width: 40%;
+  outline: none;
+}
+.subscribe button {
+  width: 11%;
+  padding: 2.5em 2em;
+  color: #F5EBE0;
+  background-color: rgba(37, 49, 73, 0.8039215686);
+  border-radius: 1em;
+  border: none;
+  margin: 4em 0 2em 0;
+  transition: all 0.2s linear;
+}
+.subscribe button:hover {
+  width: 12%;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 9em;
+  margin: 5em 0 1em 0;
+}
+.footer__list {
+  gap: 1em;
+  padding: 0;
+}
+.footer__link {
+  font-size: 14px;
+}
+.footer__dot {
+  display: inline-block;
+}
+.footer__dot--active {
+  background: #FED049;
+}
+.footer__item:hover .footer__dot--hidden {
+  background: #AEBDCA;
+}
+.footer p {
+  text-transform: uppercase;
+  color: #8b92a0;
+  font-size: 12px;
+}
+
+.social__list {
+  gap: 2em;
+}
+
+body {
+  background-color: #182130;
+  color: #F5EBE0;
+  padding: 0;
+  margin: 0;
+  word-break: break-word;
+}
+
+/*# sourceMappingURL=style.css.map */
