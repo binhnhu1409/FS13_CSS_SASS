@@ -145,6 +145,7 @@
 .pinned__post {
   display: flex;
   flex-direction: column-reverse;
+  transition: 0.2s linear;
 }
 .pinned__post--one {
   background: linear-gradient(rgba(187, 188, 203, 0.411), rgba(187, 188, 203, 0.411)), url("../assets/1coffee.jpg");
@@ -175,6 +176,9 @@
   background-size: cover;
   background-repeat: no-repeat;
   grid-area: 2/10/3/13;
+}
+.pinned__post:hover {
+  transform: translateY(-4px);
 }
 .pinned__title {
   margin: 1em;

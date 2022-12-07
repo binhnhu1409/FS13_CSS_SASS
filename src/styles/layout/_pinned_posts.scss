@@ -19,6 +19,7 @@
     @extend .border-corner;
     display: flex;
     flex-direction: column-reverse;
+    transition: 0.2s linear;
     &--one {
       @include mixins.transparent-img (variables.$color__img--grayish, '../assets/1coffee.jpg');
       grid-area: 1/1/3/7;
@@ -42,6 +43,10 @@
     &--dark{
       @extend .text-black;
     }
+  }
+
+  &__post:hover {
+    transform: translateY(-4px)
   }
 
   &__title{
