@@ -8,7 +8,7 @@ Visit my work [here](https://fs-13-css-sass.vercel.app/)
 1. Floating the HTML elements using Flexbox and Grid system
 2. Implementing basic animations as shown in the [webpage](https://maido-dark.fueko.net/) (hover effect,
    active link styles, typing effect).
-3. Implement codes using Github Pages.
+3. Implement codes using Vercel.
 4. Using SCSS (made use of variables, @mixin, @extend)
 
 ## Tech stacks
