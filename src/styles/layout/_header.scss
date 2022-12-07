@@ -1,0 +1,45 @@
+@use "../abstract/variables";
+@use "../abstract/mixins";
+
+/* nav bar positioning */
+.header {
+  &__title {
+    font-family: 'Secular One', sans-serif;
+    font-size: 45px;
+    width: fit-content;
+    position: relative;
+    left: 4em;
+    padding-top: 0.3em;
+  }
+  &__list {
+    @extend .text-menu;
+    list-style: none;
+    display: flex;
+    gap: 2em;
+    position: absolute;
+    right: 10em;
+    top: 3.5em;
+  }
+  &__link {
+    @extend .link-color;
+  }
+  &__dot {
+    @extend .dot-appear; 
+    top: -4px;
+    &--active{
+      background: variables.$color__dot--active;
+    }
+  }
+  &__item:hover &__dot--hidden{
+    background: variables.$color__dot--hidden;
+  }
+
+  &__slogan {
+    @extend .text-spacing;
+    text-transform: none !important;
+    position: fixed;
+    transform: rotate(-90deg);
+    top: 50%;
+    left: -5%;
+  }
+}

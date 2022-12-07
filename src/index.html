@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="compiled/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+  <title>CSS SASS Assignment</title>
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="header__title">Maido</h1>
+    <nav class="header__nav">
+      <ul class="header__list">
+        <li class="header__item">
+          <a class="header__link" href="#">Home</a>
+          <span class="header__dot header__dot--active"></span>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="#">Features</a>
+          <span class="header__dot header__dot--hidden"></span>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="#">Style Guide</a>
+          <span class="header__dot header__dot--hidden"></span>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="#">Contact</a>
+          <span class="header__dot header__dot--hidden"></span>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="#">Newsletter</a>
+          <span class="header__dot header__dot--hidden"></span>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="#">Demos</a>
+          <span class="header__dot header__dot--hidden"></span>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="#">Get Theme</a>
+          <span class="header__dot header__dot--hidden"></span>
+        </li>
+        <li class="header__item"><i class="bi bi-search header__link"></i></li>
+      </ul>
+    </nav>
+    <span class="header__slogan">Thoughts, stories and ideas</span>
+  </header>
+  <main>
+    <section class="pinned">
+      <div class="pinned__post pinned__post--one pinned__post--dark">
+        <h3 class="pinned__title pinned__title--big">One space, so many possibilities</h3>
+        <p>by James Bryant</p>
+      </div>
+      <div class="pinned__post pinned__post--two">
+        <h3 class="pinned__title pinned__title--small">Make the open space open to more</h3>
+        <p>by Janet Robertson</p>
+      </div>
+      <div class="pinned__post pinned__post--three">
+        <h3 class="pinned__title pinned__title--small">A comfortable spot for everyone</h3>
+        <p>by Patricica Jenkins and other authors</p>
+      </div>
+      <div class="pinned__post pinned__post--four pinned__post--dark">
+        <h3 class="pinned__title pinned__title--small">An open space for open mind</h3>
+        <p>by James Bryant and other authors</p>
+      </div>
+      <div class="pinned__post pinned__post--five pinned__post--dark">
+        <h3 class="pinned__title pinned__title--small">Anyone can hold the helm when the sea is calm</h3>
+        <p>by Magaret Robertson</p>
+      </div>
+    </section>
+    <section class="articles">
+      <div class="articles__post articles__post--one">
+        <h3 class="articles__title">
+          The perfect place that helps you get work done in peace
+          <i class="bi bi-arrow-right articles__arrow"></i>
+        </h3>
+        <p>by Janet Robertson and Magaret Robertson</p>
+      </div>
+      <div class="articles__post articles__post--two articles__post--dark">
+        <h3 class="articles__title">
+          I work best when my space is filled with inspiration
+          <i class="bi bi-arrow-right articles__arrow"></i>
+        </h3>
+        <hr>
+        <p class="articles__content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quaerat hic at, sed obcaecati, maxime modi commodi dolorum consequatur sunt, omnis numquam. Aut deserunt velit totam porro animi distinctio quidem.</p>
+        <p>by Janet Robertson and Sean Hamilton</p>
+      </div>
+      <div class="articles__post articles__post--three">
+        <h3 class="articles__title">
+          The trick to getting more done is to have the freedom to roam around
+          <i class="bi bi-arrow-right articles__arrow"></i>
+        </h3>
+        <p>by Patricica Jenkins</p>
+      </div>
+    </section>
+    <section class="old">
+      <h2>You really must see our ealier articles</h2>
+      <article class="old__container">
+        <div class="old__posts old__posts--one old__posts--dark">
+          <h3 class="old__title old__title--big">
+            Problems are not stop signs 
+            <i class="bi bi-arrow-right old__arrow"></i>
+          </h3>
+          <hr>
+          <p class="old__content">Velit quam officia, commodi exercitationem accusamus delectus dicta itaque sed nostrum nihil rem nesciunt et eum illum? Quos, voluptas! Saepe, hic vero. </p>
+          <p>by Magaret Robertson & Patricica Jenkins</p>
+        </div>
+        <div class="old__posts old__posts--two old__posts--dark">
+          <h3 class="old__title old__title--big">
+            Quiet time is the best time
+            <i class="bi bi-arrow-right old__arrow"></i>
+          </h3>
+          <p>by Sean Hamilton</p>
+        </div>
+        <div class="old__posts old__posts--three">
+          <h3 class="old__title old__title--small">
+            Being unique is better than being perfect
+            <i class="bi bi-arrow-right old__arrow"></i>
+          </h3>
+          <p>by Patricica Jenkins</p>
+        </div>
+        <div class="old__posts old__posts--four old__posts--dark">
+          <h3 class="old__title old__title--small">
+            Anyone can hold the helm when the sea is calm
+            <i class="bi bi-arrow-right old__arrow"></i>
+          </h3>
+          <hr>
+          <p class="old__content">Tempore sequi consectetur laborum fuga ex soluta, maiores, cum cupiditate ducimus quos saepe impedit.</p>
+          <p>by Magaret Robertson</p>
+        </div>
+        <div class="old__posts old__posts--five">
+          <h3 class="old__title old__title--small">
+            Change is always happening
+            <i class="bi bi-arrow-right old__arrow"></i>
+          </h3>
+          <hr class="old__line--white">
+          <p class="old__content">Obcaecati consequuntur quam ab ipsa, nisi, quo veniam similique sunt rerum quidem modi qui minima aperiam.</p>
+          <p>by Janet Robertson</p>
+        </div>
+      </article>
+      <div class="btn__container">
+        <button>Load more</button>
+      </div>
+    </section>
+    <section class="subscribe">
+      <h2 class="subscribe__title">Subscribe to see what <br> we're thinking</h2>
+      <div class="subscribe__container">
+        <h3 class="subscribe__subtitle">Start your day with Maido </h3>
+      </div>
+      <form action="" class="subscribe__form">
+        <input type="text" name="email" id="email" placeholder="Your email address">
+      </form>
+      <button>Subscribe</button>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="menu__container">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a class="footer__link" href="#">Home</a>
+          <span class="footer__dot footer__dot--active"></span>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Features</a>
+          <span class="footer__dot footer__dot--hidden"></span>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Style Guide</a>
+          <span class="footer__dot footer__dot--hidden"></span>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Contact</a>
+          <span class="footer__dot footer__dot--hidden"></span>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Demos</a>
+          <span class="footer__dot footer__dot--hidden"></span>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Get Theme</a>
+          <span class="footer__dot footer__dot--hidden"></span>
+        </li>
+      </ul>
+      <p>Maido &copy; 2022. all right reserved. Cloned by Nhu</p>
+    </div>
+    <div class="social__container">
+      <ul class="social__list">
+        <li class="social__item"><i class="bi bi-twitter"></i></li>
+        <li class="social__item"><i class="bi bi-instagram"></i></li>
+        <li class="social__item"><i class="bi bi-linkedin"></i></li>
+        <li class="social__item"><i class="bi bi-vimeo"></i></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>
