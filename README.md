@@ -1,20 +1,49 @@
-# CSS/SASS , Grid , Flexbox Assignment
+# :computer: A landing page - dark theme :computer:
 
-Refer to this [link](https://preview.themeforest.net/item/maido-multipurpose-ghost-blog-theme/full_screen_preview/24837109?_ga=2.259990478.570486835.1654146705-2133876429.1654146705)(see 'Dark version') and create a similar webpage
+In this project, I was trying to imitate a similar landing webpage as in this [link] (https://maido-dark.fueko.net/).
+Visit my work [here]()
 
-## Requirements (max 4)
+## Tasks haven been done (max 4)
 
 1. Floating the HTML elements using Flexbox and Grid system
-2. Implementing basic animations as shown in the webpage (hover effect,
-   active link styles, typing effect). You can modify the outlook of the effects
-3. Implement you codes, using the platform of your choice (For example, Github Pages), then rewrite README file.
+2. Implementing basic animations as shown in the [webpage](https://maido-dark.fueko.net/) (hover effect,
+   active link styles, typing effect).
+3. Implement codes using Github Pages.
+4. Using SCSS (made use of variables, @mixin, @extend)
 
-This assignment only requires 1 static page. No JavaScript needed.
-Font family and text content can be modified as your preferences.
-You can ignore the small buttons/tags/lables in each card. Only
-texts with some styles are enough.
+## Tech stacks
 
-## Bonus points (max 1)
+- CSS/SCSS (made use of grid and flexbox layout as well as transition and animation)
+- HTML
 
-1. Using SASS (either .sass or .scss) for styling
-2. Make use of variables, mixin, extend
+## Project structure
+
+```
+.
+│   package.json
+│   README.md
+└───src
+    │   index.html
+    ├───assets (contain images)
+    ├───compiled
+    │       style.css
+    │       style.css.map
+    └───styles
+        │   style.scss
+        │
+        ├───abstract
+        │       _mixins.scss
+        │       _variables.scss
+        │
+        ├───base
+        │       _animation.scss
+        │       _typography.scss
+        │
+        └───layout
+                _articles.scss
+                _footer.scss
+                _header.scss
+                _old_posts.scss
+                _pinned_posts.scss
+                _subscribe.scss
+```
