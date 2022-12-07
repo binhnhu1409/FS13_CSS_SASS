@@ -15,7 +15,7 @@
   font-family: "Kavoon", cursive;
 }
 
-.text-author, .footer p, .subscribe__subtitle, .subscribe__form input, .old__container p, .articles p, .pinned p, .text-spacing, .subscribe button, .old h2, .old button {
+.text-author, .footer p, .subscribe__subtitle, .subscribe__form input, .old__container p, .articles p, .pinned p, .text-spacing, .subscribe button, .old h2, .old button, .header__slogan {
   font-family: "Alexandria", sans-serif;
 }
 
@@ -45,7 +45,7 @@
   background-color: #F5EBE0 !important;
 }
 
-.text-spacing, .subscribe button, .old h2, .old button {
+.text-spacing, .subscribe button, .old h2, .old button, .header__slogan {
   text-transform: uppercase;
   font-size: 12px;
   text-align: center;
@@ -128,6 +128,13 @@
 }
 .header__item:hover .header__dot--hidden {
   background: #AEBDCA;
+}
+.header__slogan {
+  text-transform: none !important;
+  position: fixed;
+  transform: rotate(-90deg);
+  top: 50%;
+  left: -5%;
 }
 
 .pinned {

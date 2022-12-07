@@ -33,4 +33,13 @@
   &__item:hover &__dot--hidden{
     background: variables.$color__dot--hidden;
   }
+
+  &__slogan {
+    @extend .text-spacing;
+    text-transform: none !important;
+    position: fixed;
+    transform: rotate(-90deg);
+    top: 50%;
+    left: -5%;
+  }
 }
