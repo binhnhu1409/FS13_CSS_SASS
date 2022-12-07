@@ -21,6 +21,7 @@
 
   &__dot {
     @extend .dot-appear; 
+    // for myself: inline-block makes the dot visible
     display: inline-block;
     &--active{
       background: variables.$color__dot--active;

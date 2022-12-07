@@ -1,5 +1,6 @@
 @use "../abstract/mixins";
 @use "../abstract/variables";
+@use "../base/animation";
 
 .subscribe {
   text-align: center;
@@ -10,10 +11,22 @@
     padding: 5rem 0 0 0;
   }
 
+  &__container {
+    display: inline-block; /* note for myself: to stop the cursor at the last letter */
+  }
+
   &__subtitle {
     @extend .text-author;
+    letter-spacing: 0.1em;
     position: relative;
     top: -25px;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid variables.$color__text; /* The type cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    animation: 
+      typing 12s steps(55, start) forwards infinite, /*forwards make the cursor move one more space before stops*/
+      blink-cursor .6s step-end infinite;
   }
 
   &__form{
@@ -26,11 +39,21 @@
       border-bottom: 2px solid variables.$color__text;
       width: 30%;
       font-size: 18px;
+      cursor: text;
+      transition: all 0.8s ease;
+    }
+    input:focus {
+      width: 40%;
+      outline: none;
     }
   }
 
   button {
     @include mixins.btn(11%);
     margin: 4em 0 2em 0;
+    transition: all .2s linear;
+  }
+  button:hover {
+    @include mixins.btn-hover(12%);
   }
 }

@@ -53,6 +53,42 @@
   display: flex;
 }
 
+.btn-hover, .subscribe button:hover {
+  color: rgba(37, 49, 73, 0.8039215686);
+  background-color: rgb(250, 172, 99);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  35% {
+    width: 100%;
+  }
+  75% {
+    width: 100%;
+    /* from 35%-75% only cursor blinking, waiting for reverse*/
+  }
+  90% {
+    width: 0;
+  }
+  100% {
+    width: 0;
+  }
+}
+@keyframes blink-cursor {
+  from {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #F5EBE0;
+  }
+  to {
+    border-color: transparent;
+  }
+}
 /* nav bar positioning */
 .header__title {
   font-family: "Secular One", sans-serif;
@@ -248,9 +284,23 @@
   font-size: 50px;
   padding: 5rem 0 0 0;
 }
+.subscribe__container {
+  display: inline-block;
+  /* note for myself: to stop the cursor at the last letter */
+}
 .subscribe__subtitle {
+  letter-spacing: 0.1em;
   position: relative;
   top: -25px;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid #F5EBE0;
+  /* The type cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  animation: typing 12s steps(55, start) forwards infinite, blink-cursor 0.6s step-end infinite;
 }
 .subscribe__form input {
   margin-top: 1em;
@@ -260,6 +310,12 @@
   border-bottom: 2px solid #F5EBE0;
   width: 30%;
   font-size: 18px;
+  cursor: text;
+  transition: all 0.8s ease;
+}
+.subscribe__form input:focus {
+  width: 40%;
+  outline: none;
 }
 .subscribe button {
   width: 11%;
@@ -269,6 +325,10 @@
   border-radius: 1em;
   border: none;
   margin: 4em 0 2em 0;
+  transition: all 0.2s linear;
+}
+.subscribe button:hover {
+  width: 12%;
 }
 
 .footer {

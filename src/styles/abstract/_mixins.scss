@@ -25,6 +25,10 @@
   border: none;
 }
 
+@mixin btn-hover ($width) {
+  @extend .btn-hover;
+  width: $width;
+}
 
 // extend section
 .text-black {
@@ -80,4 +84,11 @@
 .list-flex-non-style {
   list-style: none;
   display: flex;
+}
+
+.btn-hover {
+  color: variables.$color__button;
+  background-color: variables.$color__img--orange;
+  font-weight: bold;
+  cursor: pointer;
 }
