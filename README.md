@@ -1,7 +1,7 @@
 # :computer: A landing page - dark theme :computer:
 
-In this project, I was trying to imitate a similar landing webpage as in this [link] (https://maido-dark.fueko.net/).
-Visit my work [here]()
+In this project, I was trying to imitate a similar landing webpage as in this [link](https://maido-dark.fueko.net/).
+Visit my work [here](https://fs-13-css-sass.vercel.app/)
 
 ## Tasks haven been done (max 4)
 
